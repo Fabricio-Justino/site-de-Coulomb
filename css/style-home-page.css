@@ -1,0 +1,237 @@
+/*reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+button {
+    padding: 10px 5px;
+    width: calc(100vw / 7);
+    color: black;
+    background-color: lightgrey;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: grey;
+    color: white;
+    transition: 1s;
+}
+/* classes auxiliares */
+.w50 {
+    width: 50%;
+    float: left;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+
+.clear {
+    clear: both;
+}
+
+a.changeToWhite:hover {
+    color: white;
+}
+
+nav ul li.here {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.title {
+    text-align: center;
+    margin: 5px 0;
+}
+
+/*overlays*/
+
+.main-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* header */
+
+header.main-header {
+    position: relative;
+    background-color: royalblue;
+    padding: 5px 0;
+    margin-bottom: 3px;
+    width: 100%;
+}
+
+.brand {
+    float: left;
+}
+
+nav.device-desktop {
+    float: right;
+}
+
+nav.device-desktop ul li {
+    display: inline-block;
+    font-size: 17 px;
+    font-weight: normal;
+    margin: 0 8px;
+    position: relative;
+    top: 3px;
+}
+
+nav.device-mobile h2{
+    cursor: pointer;
+}
+
+nav.device-mobile {
+    display: none;
+}
+
+nav.device-mobile h2{
+    float: right;
+}
+
+nav.device-mobile ul{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 100vw;
+    top: 37px;
+    left: -5px;
+    text-align: center;
+    background-color: black;
+    z-index: 999;
+}
+
+nav.device-mobile ul li{
+    width: 100%;
+    display: block;
+    margin-bottom: 1px;
+    padding: 4px 0;
+    background-color: grey;
+    transition: 1s;
+}
+
+nav.device-mobile ul li a{
+    width: 100%;
+    display: block;
+}
+
+nav.device-mobile ul li:hover{
+   background-color: lightgrey;
+}
+
+/* main */
+
+/* main topic */
+
+section.main-topic>.container {
+    background-color: rgba(155, 155, 155, 0.07);
+    padding: 3px 10px;
+}
+
+section.main-topic article p {
+    width: 100%;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.main-topic article img {
+    width: 100%;
+}
+
+/* formula */
+
+section.laws .formula img {
+    width: 25%;
+    margin: 10px 0;
+}
+
+section.laws .formula article p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/*-atract-*/
+
+.atract article p {
+    margin: 5px 0;
+}
+
+/*-conservation-*/
+
+section.laws .conservation article p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* footer */
+
+footer .first_footer {
+    color: white;
+    background-color: royalblue;
+    padding: 10px 0;
+}
+
+footer .first_footer ul li {
+    font-size: 20px;
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 100%;
+}
+
+footer .first_footer ul li:hover {
+    color: black;
+}
+
+footer .second-footer {
+    padding: 3px 0;
+    background-color: rgb(33, 76, 205);
+}
+
+/* media query */
+
+@media screen and (max-width: 720px) {
+    .w50 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    footer .first_footer {
+        text-align: center;
+    }
+
+    nav.device-desktop {
+        display: none;
+    }
+
+    nav.device-mobile {
+        display: block;
+    }
+
+}

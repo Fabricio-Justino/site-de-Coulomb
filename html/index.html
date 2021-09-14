@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Lei de coulomb</title>
+
+    <!--links stylesheet-->
+    <link rel="stylesheet" href="../css/style-home-page.css">
+    <!--links fonts-->
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="brand">
+                <a id="go-to-top" href="#" class="changeToWhite">
+                    <h2><i class="fa fa-address-book-o"></i> Pratice-work</h2>
+                </a>
+            </div>
+            <div class="pages">
+                <nav class="device-desktop">
+                    <ul>
+                        <li class="here"><a class="changeToWhite" href="#">Home</a></li>
+                        <li><a class="changeToWhite" href="#atr">Atração</a></li>
+                        <li><a class="changeToWhite" href="#rep">Repulsão</a></li>
+                        <li><a class="changeToWhite" href="#con">Conservação</a></li>
+                    </ul>
+                </nav>
+
+                <nav class="device-mobile">
+                    <h2><i class="fa fa-bars"></i></h2>
+                    <ul>
+                        <li class="here"><a href="#">Home</a></li>
+                        <li><a href="#atr">Atração</a></li>
+                        <li><a href="#rep">Repulsão</a></li>
+                        <li><a href="#con">Conservação</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="clear"> </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-topic">
+            <div class="container">
+                <div class="title">
+                    <h1>Lei de Coulomb</h1>
+                </div>
+                <!--title-->
+
+                <article>
+                    <p>
+                        A lei de Coulomb é uma lei da Física usada para determinar a intensidade da força de atração ou
+                        repulsão entre duas cargas elétricas.
+                    </p>
+                    <p>
+                        A <strong>lei de Coulomb</strong> é uma importante lei da Física que estabelece que a força
+                        eletrostática entre duas cargas elétricas é proporcional ao módulo das cargas elétricas e
+                        inversamente proporcional ao quadrado da distância que as separa.
+                    </p>
+                    <img src="../images/atracao-entre-balao-e-agua.jpg" alt="balão dobrando a água">
+                    <p>
+                        Nesta imagem vemos um balão eletricamente carregado que atrai a agua para sí,
+                        por conta do <strong>oxigênio presente na água ser mais eletronegatico que o
+                            hidrogênio</strong>,
+                        assim a região positiva da molecula, o hidrogênio e atraído pelo balão.
+                    </p>
+                </article>
+            </div>
+            <!--container-->
+        </section>
+
+        <section class="laws">
+            <div class="container">
+                <div class="formula">
+                    <div class="title">
+                        <h2>Fórmula</h2>
+                    </div>
+
+                    <div class="center">
+                        <img src="../images/lei-de-coulomb-formula.jpg" alt="formula de Coulomb">
+                    </div>
+
+                    <article>
+                        <p>
+                            Está fórmula descreve a força de atração ou repulão sofrida por partículas.
+                            Onde podemos observar que a força será igual ao produtos das cargas com a
+                            cosntante K<sub>0</sub> = 9.10<sup>9</sup> e inversamente proporcional ao quadrado da
+                            distância.
+                            ou seja quanto mais distante menor será a força e ela sempre tera um valor não nulo,
+                            tendendo a zero.
+                        </p>
+                    </article>
+                </div>
+                <!--formula-->
+
+                <div id="atr" class="atract">
+                    <div class="title">
+                        <h2>Atração</h2>
+                    </div>
+                    <article>
+                        <p>
+                            Quando duas cargas possuírem o sinais diferentes ocorre uma atração entre elas. Ou seja,
+                            elas ficarão mais proximas
+                            uma da outra a cada segundo que se passa, diminuindo sua distância, porém aumentando a
+                            força, assim se aproximando cada
+                            vez mais rápido.
+                        </p>
+                        <strong>segue o exemplo abaixo. click na tela preta.</strong>
+                    </article>
+                    <canvas id="atract"></canvas>
+                </div>
+                <!--atract-->
+
+                <div id="rep" class="repulsion">
+                    <div class="title">
+                        <h2>Repulsão</h2>
+                    </div>
+
+                    <article>
+                        <p>
+                            Quando duas cargas possuírem o mesmo sinal ocorre uma força de repusão.
+                            Força essa que faz com que as cargas se afastem cada vez mais, aumntando
+                            a distância entre elas, ou seja a força vai ficando cada vez menor.
+                        </p>
+                    </article>
+                    <strong>segue o exemplo abaixo. click na tela preta.</strong>
+                    <canvas id="repulsion"></canvas>
+                </div>
+                <!--repulsion-->
+
+                <div id="con" class="conservation">
+                    <div class="container">
+                        <div class="title">
+                            <h2>Conservação de carga</h2>
+                        </div>
+
+                        <article>
+                            <p>
+                                O princípio da conservação da carga elétrica afirma que a soma algébrica das cargas
+                                antes e depois de um processo de transferência deve ser a mesma. Assim, podemos dizer
+                                que a carga elétrica não pode ser criada nem destruída, somente transferida entre
+                                corpos.
+                            </p>
+                            <p>
+                                Aqui iremos usar a tranferencia por contato, onde vale a seguinte relação:
+                                q + Q / 2 = cosntante, essa constante é o valor que as cargas irão assumir
+                                após a transferência.
+                            </p>
+                        </article>
+                        <strong>segue o exemplo abaixo. click na tela preta.</strong>
+                        <button onclick="_click()">reset</button>
+                        <canvas id="conservation"></canvas>
+                    </div>
+                    <!--container-->
+                </div>
+                <!--conservation-->
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <section class="first_footer">
+            <div class="container">
+
+                <div class="information w50">
+                    <ul>
+                        <li><a target="_blank" href="https://www.instagram.com/fabricio_._borges/"><i
+                                    class="fa fa-instagram"></i> fabricio_._borges</a></li>
+                        <li><i class="fa fa-pencil-square"></i> Fabricio Borges Justino</li>
+                        <li><a href=""><i class="fa fa-youtube-play"></i> Canal do meu irmão</a></li>
+                    </ul>
+                </div>
+
+                <div class="search_util w50">
+                    <ul>
+                        <li><a target="_blank"
+                                href="https://brasilescola.uol.com.br/fisica/conservacao-carga-eletrica.htm"><i
+                                    class="fa fa-google"></i> Lei da conservação</a></li>
+                        <li><a target="_blank" href="https://brasilescola.uol.com.br/fisica/lei-coulomb.htm"><i
+                                    class="fa fa-google"></i> Lei de Coulomb</a></li>
+                        <li><a target="_blank"
+                                href="https://www.youtube.com/watch?v=LWPIiKu5TPQ&ab_channel=ChamaoF%C3%ADsico"><i
+                                    class="fa fa-youtube-play"></i> Canal de física</a></li>
+                    </ul>
+                </div>
+
+                <div class="clear"></div>
+            </div>
+        </section>
+        <section class="second-footer">
+            <div class="title">
+                <h2>Todos direitos reservados <i class="fa fa-copyright"></i></h2>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/functions.js"></script>
+    <script src="../js/Box.js"></script>
+    <script src="../js/Particle.js"></script>
+    <script src="../js/skecth.js"></script>
+    <script src="../js/dinamicPage.js"></script>
+</body>
+
+</html>
